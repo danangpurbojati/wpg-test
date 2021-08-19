@@ -1,0 +1,68 @@
+.trip-wrapper{
+    margin-top: 50px;
+    padding: 40px 100px;
+
+    @media screen and (max-width: 992px) {
+        padding: 20px 50px;;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 16px;
+    }
+
+    .trip-title{
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .trip-line{
+        width: 150px;
+        border: none;
+        margin-top: 8px;
+        border-top: 2px solid rgb(47, 47, 202);
+        margin-bottom: 32px;
+    }
+
+    .trip-content{        
+        .trip{
+            position: relative;
+
+            .trip-image{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                height: 300px;
+            }
+
+            .trip-title{
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                padding: 20px;
+                font-size: 32px;
+                text-transform: capitalize;
+            }
+        }
+
+        .main-trip{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+
+            @media screen and (max-width: 992px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .secondary-trip{
+            margin-top: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            
+            @media screen and (max-width: 992px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

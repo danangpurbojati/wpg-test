@@ -1,0 +1,19 @@
+.nav-wrapper{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    padding: 40px 200px;
+
+    img{
+        height: 30px;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 20px 50px;;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,39 @@
+.post-wrapper{
+    padding: 40px 100px;
+
+    @media screen and (max-width: 992px) {
+        padding: 20px 50px;;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 16px;
+    }
+
+    .post-title{
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .title-line{
+        width: 150px;
+        border: none;
+        margin-top: 8px;
+        border-top: 2px solid rgb(47, 47, 202);
+        margin-bottom: 32px;
+    }
+
+    .post-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        // border: 1px solid red;
+
+        @media screen and (max-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

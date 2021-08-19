@@ -1,5 +1,17 @@
-import React from "react"
+import React from 'react'
+import Hero from '../components/Hero'
+import Layout from '../components/Layout'
+import Post from '../components/Post'
+import Trip from '../components/Trip'
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Home = () => {
+    return (
+        <Layout>
+            <Hero />
+            <Trip />
+            <Post />
+        </Layout>
+    )
 }
+
+export default Home
